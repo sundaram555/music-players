@@ -1,4 +1,4 @@
-const apiKey = "YOUR_YOUTUBE_API_KEY"; // Replace this!
+const apiKey = "AIzaSyD-04EnppobO8xfPtCYveU25cmrKkF-6B0"; // Replace this!
 const suggestionsBox = document.getElementById("suggestions");
 
 async function getSuggestions(query) {
