@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YouTube Music Player</title>
+  <link href="style.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex flex-col items-center justify-start p-6">
+  <h1 class="text-4xl font-bold mb-6">🎵 Free Music Player</h1>
+
+  <div class="w-full max-w-xl relative">
+    <input
+      id="search"
+      type="text"
+      placeholder="Search for a song..."
+      class="w-full p-3 rounded-xl bg-gray-800 text-white"
+      oninput="getSuggestions(this.value)"
+    />
+    <ul id="suggestions" class="absolute w-full bg-white text-black rounded-b-xl mt-1 hidden z-10"></ul>
+  </div>
+
+  <div id="nowPlaying" class="mt-10 text-center hidden">
+    <h2 class="text-2xl mb-4" id="songTitle">Now Playing...</h2>
+    <audio id="audioPlayer" controls class="w-full max-w-md"></audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
