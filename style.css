@@ -1,0 +1,11 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+#suggestions li {
+  border-bottom: 1px solid #ccc;
+}
+
+#suggestions li:last-child {
+  border-bottom: none;
+}
